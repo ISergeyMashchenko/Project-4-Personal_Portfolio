@@ -16,3 +16,18 @@ const counters = document.querySelectorAll('.skills__ratings-counter'),
 counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+
+const scrollBtn = document.querySelector(".scrolltop");
+
+scrollBtn.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
+
+document.addEventListener("scroll", (e) => {
+    if (document.documentElement.scrollTop <= 200) {
+        scrollBtn.style.display = "none";
+    } else {
+        scrollBtn.style.display = "block";
+    }
+});

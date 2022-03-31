@@ -127,6 +127,9 @@
             line-height: 16px;
         }
     }
+    .scrolltop {
+        font-size: 35px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -210,6 +213,11 @@
             grid-template: 45px 190px 45px / repeat(2, 250px);
         }
     }
+
+    .scrolltop {
+        right: 25px;
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -236,7 +244,7 @@
         }
     }
     .promo {
-        background: url('../img/main_bg.jpg') no-repeat 57%/cover;
+        background: url('../img/main_bg.jpg') no-repeat 40%/cover;
         &__btns {
             margin-top: 30px;
         }
@@ -292,5 +300,10 @@
             margin: 0 auto;
             line-height: 18px;
         }
+    }
+
+    .scrolltop {
+        right: 5px;
+        font-size: 18px;
     }
 }

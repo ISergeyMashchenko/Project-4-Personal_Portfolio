@@ -22,6 +22,19 @@
     margin: 25px auto 0 auto;
 }
 
+/* Scroll top */
+.scrolltop {
+    position: fixed;
+    right: 40px;
+    bottom: 70px;
+    font-size: 40px;
+    z-index: 100;
+    color: #FFA501;
+    &:hover {
+        filter: contrast(250%);
+    }
+}
+
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/buttons';
